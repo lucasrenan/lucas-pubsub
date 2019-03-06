@@ -1,0 +1,13 @@
+version: '3'
+services:
+  ruby-service:
+    build:
+      context: ./ruby-service
+    volumes:
+      - ./ruby-service:/app
+
+  go-service:
+    build:
+      context: ./go-service
+    volumes:
+      - ./go-service:/app
